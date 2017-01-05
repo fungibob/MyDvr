@@ -44,7 +44,9 @@ and open the template in the editor.
         This line may vary depending on your system.
 
         So here, Mytest is the folder that is created and "init" makes the folder a
-        GitHub repository. Change the directory to this newly created folder:
+        GitHub repository. 
+
+        Change the directory to this newly created folder:
 -->
 
     cd Mytest
@@ -101,5 +103,65 @@ and open the template in the editor.
         Git repository.
 -->
 
+<!--
+        6 Committing changes made to the index
+
+        Once all the files are added, we can commit it. This means that we have finalized
+        what additions and/or changes have to be made and they are now ready to be
+        uploaded onto our repository. Use the command :
+-->
+
+    git commit -m "some_message"
+
+<!--
+        "some_message" in the above command can be any simple message like "my first
+        commit" or "edit in readme", etc.
+-->
+
+<!--
+        7 Creating a repository on GitHub
+
+        Create a repository on GitHub. Notice that the name of the repository should
+        be the same as the repository's on the local system. In this case, it will be
+        "Mytest". To do this login to your account on https://github.com. Then click
+        on the "plus(+)" symbol at the top right corner of the page and select "create
+        new repository". Fill the details as shown in the image below and click on
+        "create repository" button.
+
+        Once this is created, we can push the contents of the local repository onto
+        the GitHub repository in your profile. Connect to the repository on GitHub
+        using the command:
+
+        Important Note: Make sure you replace 'user_name' and 'Mytest' in the path
+        with your Github username and folder before running the command!
+-->
+
+    git remote add origin https://github.com/user_name/Mytest.git
+
+<!--
+        Where 'user_name' is the hub username and 'MyTest' is the repository name.
+-->
+
+<!--
+        8 Pushing files in local repository to GitHub repository
+
+        The final step is to push the local repository contents into the remote host
+        repository (GitHub), by using the command:
+-->
+
+    git push origin master
+
+<!--
+        Enter the login credentials [user_name and password] .
+-->
+
+<!--
+        The above adds all the contents of the Mytest folder (my local repository)
+        to GitHub. For subsequent projects or for creating repositories, you can
+        start off with step 3 directly. Finally, if you login to to your GitHub account
+        and click on your Mytest repository, you can see that the 2 files README and
+        sample.c have been uploaded and are visible to all as shown in the follwoing
+        image.
+-->
     </body>
 </html>
